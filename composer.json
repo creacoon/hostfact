@@ -7,7 +7,6 @@
     "api"
   ],
   "type": "library",
-  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
@@ -16,7 +15,7 @@
     }
   ],
   "require": {
-    "php": "^8.0",
+    "php": "^8.1",
     "guzzlehttp/guzzle": "^7.4",
     "hyperized/value-objects": "^0.3.0",
     "thecodingmachine/safe": "^v2.4.0"
@@ -54,6 +53,7 @@
   "scripts": {
     "test": [
       "@phpmd",
+      "@psalm",
       "@phpstan",
       "@phpcbf",
       "@phpcs",
@@ -85,5 +85,7 @@
       "composer/package-versions-deprecated": true,
       "infection/extension-installer": true
     }
-  }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
