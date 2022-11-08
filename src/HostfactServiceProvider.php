@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Hyperized\Hostfact\Providers;
+namespace Hyperized\Hostfact;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,9 +13,11 @@ class HostfactServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->publishes([
+        $this->publishes(
+            [
             __DIR__.'/../config/hostfact.php' => config_path('hostfact.php'),
-        ], 'config');
+            ], 'config'
+        );
 
         $this->mergeConfigFrom(__DIR__.'/../config/hostfact.php', 'hostfact');
     }
