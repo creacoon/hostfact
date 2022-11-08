@@ -16,7 +16,8 @@ class HostfactServiceProvider extends ServiceProvider
         $this->publishes(
             [
             __DIR__.'/../config/hostfact.php' => config_path('hostfact.php'),
-            ], 'config'
+            ],
+            'config'
         );
 
         $this->mergeConfigFrom(__DIR__.'/../config/hostfact.php', 'hostfact');

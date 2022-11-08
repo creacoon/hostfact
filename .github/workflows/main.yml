@@ -36,7 +36,7 @@ jobs:
           composer self-update
       - name: Composer update
         run: |
-          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
+          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
       - name: Composer ${{ matrix.test }}-${{ matrix.os }}
         run: |
           composer ${{ matrix.test }}
