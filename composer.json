@@ -43,10 +43,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Hyperized\\Hostfact\\Providers\\HostfactServiceProvider"
+        "Hyperized\\Hostfact\\HostfactServiceProvider"
       ],
       "aliases": {
-        "Hostfact": "Hyperized\\Hostfact\\Providers\\HostfactServiceProvider"
+        "Hostfact": "Hyperized\\Hostfact\\HostfactServiceProvider"
       }
     }
   },
