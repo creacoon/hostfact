@@ -12,4 +12,11 @@
             <directory name="vendor"/>
         </ignoreFiles>
     </projectFiles>
+    <issueHandlers>
+        <InvalidReturnType>
+            <errorLevel type="suppress">
+                <file name="vendor/ramsey/collection/src/AbstractArray.php" />
+            </errorLevel>
+        </InvalidReturnType>
+    </issueHandlers>
 </psalm>
