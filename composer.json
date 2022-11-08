@@ -15,8 +15,8 @@
     }
   ],
   "require": {
-    "php": "^8.1",
-    "guzzlehttp/guzzle": "^7.4",
+    "php": "^8.0",
+    "guzzlehttp/guzzle": "^7.5",
     "hyperized/value-objects": "^0.3.0",
     "thecodingmachine/safe": "^v2.4.0"
   },
@@ -24,10 +24,10 @@
     "phpunit/phpunit": "^9.5",
     "vimeo/psalm": "^4.30",
     "orchestra/testbench": "^7.11",
-    "phpstan/phpstan": "^1.2",
-    "squizlabs/php_codesniffer": "^3.6",
+    "phpstan/phpstan": "^1.9.1",
+    "squizlabs/php_codesniffer": "^3.7.1",
     "povils/phpmnd": "^v3.0.1",
-    "infection/infection": "^0.26",
+    "infection/infection": "^0.26.16",
     "phpmd/phpmd": "^2.13"
   },
   "autoload": {
